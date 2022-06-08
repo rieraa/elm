@@ -1,0 +1,16 @@
+html, body, div, span, h1, h2, h3, h4, h5, h6, ul, ol, li, p {
+    margin: 0;
+    padding: 0;
+    //去除默认样式
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: "微软雅黑";//设置默认字体样式
+}
+ul,ol{
+    list-style:none;//列表
+}
+a{
+    text-decoration: none;//去除超链接的下划线
+}

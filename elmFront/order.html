@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>确认订单</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link href="FrameWork/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="FrameWork/reset.css" rel="stylesheet">
+        <link href="css/order.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="wrapper">
+            <!--头部-->
+            <header>
+                <p>确认订单</p>
+            </header>
+
+            <!--订单详情-->
+            <div class="order_info">
+                <h5>订单配送至:</h5>
+                <div class="order_info_address">
+                    <p>成都市高新区</p>
+                    <i class="fa fa-angle-right"></i>
+                </div>
+                <p>林先生 12345678912</p>
+
+            </div>
+            <h3>袁记云饺(成都市高新区天久店)</h3>
+
+            <!--订单明细-->
+            <ul class="order_detailed">
+                <li>
+                    <div class="order_detailed_left">
+                        <img src="img/img1/yumi.png">
+                        <p>香甜玉米(水饺) × 2</p>
+                    </div>
+                    <p>&#165;15</p>
+                </li>
+                <li>
+                    <div class="order_detailed_left">
+                        <img src="img/img1/qincai.png">
+                        <p>新鲜芹菜(水饺) × 1</p>
+                    </div>
+                    <p>&#165;15</p>
+                </li>
+
+
+            </ul>
+            <div class="order_deliveryFee">
+                <p>配送费:</p>
+                <p>&#165;3</p>
+            </div>
+
+            <!--订单合计-->
+            <div class="total">
+                <div class="total_left">
+                    &#165;33
+                </div>
+                <div class="total_right" onclick="location.href='payment.html'">
+                    去支付
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>

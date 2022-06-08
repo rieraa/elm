@@ -1,0 +1,455 @@
+.wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+/*******************************头部*******************************/
+
+.wrapper header {
+    width: 100%;
+    height: 12vw;
+    background-color: #0097ff;
+
+    display: flex;
+    align-items: center;
+}
+
+.wrapper header .location-text .fa-location-arrow {
+    /*定位图标设置*/
+    color: white;
+    width: 3.5vw;
+    height: 3.5vw;
+    margin: 0 1vw 0 3vw; /*上 右 下 左*/
+}
+
+.wrapper header .location-text {
+    font-size: 4.5vw;
+    font-weight: 700;
+    /*字体加粗*/
+    color: white;
+}
+
+.wrapper header .location-text .fa-angle-down {
+    /*下拉菜单图标*/
+    color: white;
+    margin-left: 1vw;
+}
+
+/*******************************搜索*******************************/
+
+.wrapper .search {
+    width: 100%;
+    height: 13vw;
+}
+
+.wrapper .search .search-fixed-top {
+    width: 100%;
+    height: 13vw;
+    background-color: #0097ff; /*搜索框部分*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .search .search-fixed-top .search-box {
+    width: 90%; /*搜索框的白色部分*/
+    height: 9vw;
+    background-color: white;
+    border-radius: 3px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 3.5vw;
+    color: #aeaeae;
+    user-select: none; /*文本选中状态无效*/
+
+}
+
+.wrapper .search .search-fixed-top .search-box .fa-search {
+    margin-right: 1vw;
+}
+
+/*******************************点餐分类*******************************/
+
+.wrapper .foodType {
+    width: 100%;
+    height: 48vw;
+
+    display: flex; /*设置每个li之间是弹性布局*/
+    flex-wrap: wrap; /*自动换行*/
+    justify-content: space-around; /*水平对齐 两边不贴边*/
+    align-content: center; /*竖直方向上两行作为一个整体*/
+}
+
+.wrapper .foodType li {
+    width: 18vw;
+    height: 20vw;
+
+    display: flex; /*设置li内部也是弹性布局*/
+    flex-direction: column; /*转换为侧轴排列 避免文字和图片水平排列*/
+    justify-content: center;
+    align-items: center;
+
+    user-select: none; /*文本选中状态无效*/
+    cursor: pointer; /*鼠标移动至上方 会变成小手*/
+}
+
+.wrapper .foodType li img {
+    /*设置图片的大小*/
+    width: 12vw;
+    height: 12vw;
+}
+
+.wrapper .foodType li p {
+    font-size: 3.2vw;
+    font-weight: 500;
+    color: #666;
+
+}
+
+/*******************************横幅广告*******************************/
+
+.wrapper .banner {
+    width: 95%;
+    height: 29vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+
+
+
+    /*background-image: url("../img/img1/banner_.png");*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
+    background-color: #FFFAFA;
+
+    /*通过边框盒子 限制住了盒子的大小*/
+    box-sizing: border-box;
+    padding: 2vw 4vw;
+
+}
+
+.wrapper .banner div{
+    display: flex;
+    flex-direction: column; /*主轴垂直*/
+    justify-content: center;
+    margin-left: 2vw;
+}
+
+.wrapper .banner img{
+    height: 23vw;
+    display: flex;
+    flex-direction: column; /*主轴垂直*/
+    justify-content: center;
+}
+
+.wrapper .banner h3 {
+    font-size: 4.2vw;
+    margin-bottom: 1.2vw;
+    user-select: none; /*文本选中状态无效*/
+
+}/*三级标题*/
+
+.wrapper .banner p {
+    font-size: 3.4vw;
+    color: #666;
+    margin-bottom: 2.4vw;
+    user-select: none; /*文本选中状态无效*/
+
+
+}/*解释说明*/
+
+.wrapper .banner a {
+    font-size: 3vw;
+    color: #c79060;
+    font-weight: 700;
+    cursor: pointer;
+}/*超链接*/
+
+/*******************************超级会员*******************************/
+
+.wrapper .superMember {
+    width: 95%;
+    height: 11.5vw;
+    background-color: #FEEDC1;
+    margin: 1.3vw auto;
+    border-radius: 3px;
+
+    color: #644F1B;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper .superMember .super_left{
+    display: flex;
+    align-items: center;
+    margin-left: 4vw;
+    user-select: none;
+}
+
+.wrapper .superMember .super_left img{
+    width: 6vw;
+    height: 6vw;
+    margin-right: 2vw;
+}
+
+.wrapper .superMember .super_left h3{
+    font-size: 4vw;
+    margin-right: 2vw;
+}
+
+.wrapper .superMember .super_left p{
+    font-size: 3vw;
+}
+
+.wrapper .superMember .super_right{
+    font-size: 3vw;
+    margin-right: 4vw;
+    cursor: pointer;
+}
+
+/*******************************推荐商家*******************************/
+
+.wrapper .recommend {
+    width: 100%;
+    height: 14vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .recommend .recommend-line {
+    width: 7vw;
+    height: 0.2vw;
+    background-color: #888;
+}
+
+.wrapper .recommend p {
+    font-size: 4vw;
+    margin: 0 4vw;
+}
+
+/*******************************排序方式*******************************/
+
+.wrapper .orderType {
+    width: 100%;
+    height: 5vw;
+    margin-bottom: 5vw;
+
+    display: flex;
+    justify-content:  space-around;
+    align-items: center;
+
+}
+
+.wrapper .orderType li{
+    font-size: 3.5vw;
+    color: #555;
+    display: flex;
+    align-items: center;
+
+}
+
+.wrapper .orderType li img{
+    height: 2.5vw;
+    margin-left: 0.3vw;
+
+}
+
+/*******************************推荐商家*******************************/
+
+/*business分成左右两块*/
+.wrapper .business{
+    width: 100%;
+    margin-bottom: 14vw;
+    display:inline-block
+}
+.wrapper .business li{
+    width: 100%;
+    box-sizing: border-box;
+    /*设置弹性盒子的原因：由于设置了padding 宽度又为100% 若不设置弹性盒子，会出现横向的滚动条*/
+    padding: 2.5vw;
+    user-select: none;
+    border-bottom: solid 1px #DDD;
+
+    display: flex;
+
+}
+.wrapper .business li img{
+    width: 18vw;
+    height: 18vw;
+
+}
+.wrapper .business li .business_info{
+    width: 100%;
+    box-sizing: border-box;
+    padding-left:1vw ;
+}
+
+/*第一行 餐馆名称和一个小图标*/
+.wrapper .business li .business_info .business_info_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2vw;
+}
+.wrapper .business li .business_info .business_info_header h3{
+    font-size: 4vw;
+    color: #333;
+
+}
+.wrapper .business li .business_info .business_info_header .fa-minus-square{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 4vw;
+    height: 4vw;
+    /*width,height设置的是容器的大小，若需要修改填图标的大小，需要对font-size进行修改*/
+    color: #666666;
+    font-size: 3vw;
+    margin-right: 3vw;
+}
+
+/*第二行 星级评价和蜂鸟快送*/
+.wrapper .business li .business_info .business_info_star{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2vw;
+    font-size: 3.1vw;
+}
+.wrapper .business li .business_info .business_info_star .business_info_star_left{
+    display: flex;
+    align-items: center;
+}
+.wrapper .business li .business_info .business_info_star .business_info_star_left .fa-star ,.fa-star-half-full ,.fa-star-o{
+    color: #FEC80E;
+    margin-right: 0.5vw;
+}
+.wrapper .business li .business_info .business_info_star .business_info_star_left p{
+    color: #666;
+    margin-left: 1vw;
+}
+.wrapper .business li .business_info .business_info_star .business_info_star_right{
+    background-color: #0097FF;
+    color: #fff;
+    font-size: 2.4vw;
+    border-radius: 4px;
+    padding: 0 0.6vw;
+}
+
+/*第三行 配送时间路程*/
+.wrapper .business li .business_info .business_info_delivery{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2vw;
+
+    color: #666;
+    font-size: 3.1vw;
+}
+
+/*第四行 商家简介*/
+.wrapper .business li .business_info .business_info_intro{
+    display: flex;
+
+    align-items: center;
+    margin-bottom: 3vw;
+
+}
+.wrapper .business li .business_info .business_info_intro div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border :solid 1px #DDD;
+    font-size: 2.8vw;
+    color: #666;
+    border-radius: 3px;
+    padding: 0 0.1vw;
+}
+
+/*第五行 各种优惠*/
+.wrapper .business li .business_info .business_info_promotion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.8vw;
+}
+
+.wrapper .business li .business_info .business_info_promotion .business_info_promotion_left{
+    display: flex;
+    align-items: center;
+
+}
+.wrapper .business li .business_info .business_info_promotion .business_info_promotion_left .business_info_promotion_left_icon{
+    width: 4vw;
+    height: 4vw;
+    background-color: #70BC46;
+    font-size: 3vw;
+    color: #FFF;
+    border-radius: 3px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper .business li .business_info .business_info_promotion .business_info_promotion_left p{
+    color: #666;
+    font-size: 3vw;
+    margin-left:2vw ;
+}
+
+.wrapper .business li .business_info .business_info_promotion .business_info_promotion_right{
+    display: flex;
+    align-items: center;
+    font-size: 2.5vw;
+    color: #999;
+}
+.wrapper .business li .business_info .business_info_promotion .business_info_promotion_right p{
+    margin-right:2vw ;
+}
+
+/*******************************底部菜单栏*******************************/
+
+.wrapper .bottom_menu{
+
+    width: 100%;
+    height: 14vw;
+    border-top: solid 1px #DDD;
+    background-color: #FFF;
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.wrapper .bottom_menu li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: #999;
+    user-select: none;
+    cursor: pointer;
+    font-weight: 545;
+}
+.wrapper .bottom_menu li  p{
+    font-size: 2.8vw;
+
+}
+.wrapper .bottom_menu li img{
+
+    height: 5vw;
+
+}

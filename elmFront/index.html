@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>饿了吗首页</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link href="FrameWork/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="FrameWork/reset.css" rel="stylesheet">
+        <link href="css/index.css" rel="stylesheet">
+        <script src = js/index.js></script>
+        <!--最后书写的样式有效-->
+        <title>Title</title>
+    </head>
+    <body>
+        <!--总容器-->
+        <div class="wrapper">
+            <!--头部部分-->
+            <header>
+                <div class="location-text"><i class="fa fa-location-arrow"></i>成都市高新区<i class="fa fa-angle-down"></i>
+                </div>
+
+            </header>
+
+            <!--搜索部分-->
+            <div class="search">
+                <div class="search-fixed-top"id="fixedBox">
+                    <div class="search-box">
+                        <i class="fa fa-search"></i>搜索饿了么商家、商品名称
+                    </div>
+                </div>
+            </div>
+
+            <!--点餐分类部分-->
+            <ul class="foodType">
+                <li onclick="location.href='businesslist.html'">
+                    <img src="img/img1/msfl001.png">
+                    <p>美食</p>
+                </li >
+                <li onclick="location.href='businesslist.html'">
+                <img src="img/img1/msfl002.png">
+                <p>早餐</p>
+                </li>
+                <li onclick="location.href='businesslist.html'">
+                <img src="img/img1/msfl003.png">
+                <p>跑腿代购</p>
+                </li>
+                <li onclick="location.href='businesslist.html'">
+                <img src="img/img1/msfl004.png">
+                <p>汉堡披萨</p>
+                </li>
+                <li onclick="location.href='businesslist.html'">
+                <img src="img/img1/msfl005.png">
+                <p>甜品饮品</p>
+                </li>
+                <li onclick="location.href='businesslist.html'">
+                <img src="img/img1/msfl006.png">
+                <p>素食简餐</p>
+                </li>
+                <li onclick="location.href='businesslist.html'">
+                <img src="img/img1/msfl007.png">
+                <p>地方小吃</p>
+                </li>
+                <li onclick="location.href='businesslist.html'">
+                <img src="img/img1/msfl008.png">
+                <p>米粉面馆</p>
+                </li>
+                <li onclick="location.href='businesslist.html'">
+                <img src="img/img1/msfl009.png">
+                <p>包子粥铺</p>
+                </li>
+                <li onclick="location.href='businesslist.html'">
+                <img src="img/img1/msfl010.png">
+                <p>炸鸡炸串</p>
+                </li>
+            </ul>
+
+            <!--广告部分-->
+            <div class="banner">
+                <div>
+                    <h3>品质套餐</h3>
+                    <p>搭配齐全吃的好</p>
+                    <a>立即抢购 &gt;</a>
+                </div>
+                <img src="img/img1/ban.png">
+            </div>
+
+            <!--超级会员部分-->
+            <div class="superMember">
+                <div class="super_left">
+                    <img src="img/img1/super_left.png">
+                    <h3>超级会员</h3>
+                    <p>&#8226; 每月享超级权益</p>
+                </div>
+
+                <div class="super_right">
+                    立即开通 &gt;
+                </div>
+
+
+            </div>
+
+            <!--推荐商家部分-->
+            <div class="recommend">
+                <div class="recommend-line"></div>
+                <p>推荐商家</p>
+                <div class="recommend-line"></div>
+            </div>
+
+            <!--排序方式-->
+            <ul class="orderType">
+                <li>综合排序<img src="img/img1/downTri.png"></li>
+                <li>距离最近</li>
+                <li>销量最高</li>
+                <li>筛选<img src="img/img1/select.png"></li>
+
+            </ul>
+
+            <!--推荐商家列表-->
+            <ul class="business">
+                <li>
+                <img src="img/img1/dumPing.jpeg">
+                <div class="business_info">
+                    <div class="business_info_header">
+                        <h3>袁记云饺(成都市高新区天久店)</h3>
+                        <i class="fa fa-minus-square"></i>
+                    </div> <!--第一行-->
+                    <div class="business_info_star">
+                        <div class="business_info_star_left">
+                            <!--                                <i class="fa fa-star"></i>满星-->
+                            <!--                                <i class="fa fa-star-half-full"></i>半星-->
+                            <!--                                <i class="fa fa-star-o"></i>空星-->
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-full"></i>
+                            <p>4.5 月售345单</p>
+                        </div>
+                        <div class="business_info_star_right">蜂鸟快送</div>
+                    </div><!--星级评价-->
+                    <div class="business_info_delivery">
+                        <p>&#165;15起送 | &#165;3配送</p>
+                        <p>7.15km |30 分钟</p>
+                    </div><!--配送-->
+                    <div class="business_info_intro">
+                        <div>各种饺子</div>
+                    </div><!--简介-->
+                    <div class="business_info_promotion">
+                        <div class="business_info_promotion_left">
+                            <div class="business_info_promotion_left_icon">新</div>
+                            <p>饿了么新用户首单立减9元</p>
+                        </div>
+                        <div class="business_info_promotion_right">
+                            <p>两个活动</p>
+                            <i class="fa fa-caret-down"></i>
+                        </div>
+
+                    </div><!---->
+                    <div class="business_info_promotion">
+                        <div class="business_info_promotion_left">
+<!--                            这里用到了一个行的样式-->
+                            <div class="business_info_promotion_left_icon" style="background-color: #F1884F">特</div>
+                            <p>特价商品5元起</p>
+                        </div>
+
+
+                    </div><!---->
+
+
+
+
+                </div>
+            </li>
+                <li>
+                    <img src="img/img1/tofu.jpeg">
+                    <div class="business_info">
+                        <div class="business_info_header">
+                            <h3>老祈家豆腐旗舰店(青华路店)</h3>
+                            <i class="fa fa-minus-square"></i>
+                        </div> <!--第一行-->
+                        <div class="business_info_star">
+                            <div class="business_info_star_left">
+                                <!--                                <i class="fa fa-star"></i>满星-->
+                                <!--                                <i class="fa fa-star-half-full"></i>半星-->
+                                <!--                                <i class="fa fa-star-o"></i>空星-->
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+
+                                <i class="fa fa-star-half-full"></i>
+                                <i class="fa fa-star-o"></i>
+                                <p>3.5 月售998单</p>
+                            </div>
+                            <div class="business_info_star_right">蜂鸟快送</div>
+                        </div><!--星级评价-->
+                        <div class="business_info_delivery">
+                            <p>&#165;25起送 | &#165;7配送</p>
+                            <p>6.14km |25 分钟</p>
+                        </div><!--配送-->
+                        <div class="business_info_intro">
+                            <div>好吃的豆腐</div>
+                        </div><!--简介-->
+                        <div class="business_info_promotion">
+                            <div class="business_info_promotion_left">
+                                <div class="business_info_promotion_left_icon">新</div>
+                                <p>饿了么新用户首单立减10元</p>
+                            </div>
+                            <div class="business_info_promotion_right">
+                                <p>两个活动</p>
+                                <i class="fa fa-caret-down"></i>
+                            </div>
+
+                        </div><!---->
+                        <div class="business_info_promotion">
+                            <div class="business_info_promotion_left">
+                                <!--                            这里用到了一个行的样式-->
+<!--                                <div class="business_info_promotion_left_icon" style="background-color: #F1884F">特</div>-->
+<!--                                <p>特价商品5元起</p>-->
+                            </div>
+
+
+                        </div><!---->
+
+
+
+
+                    </div>
+                </li>
+                <li>
+                    <img src="img/img1/hamberKing.jpeg">
+                    <div class="business_info">
+                        <div class="business_info_header">
+                            <h3>汉堡王(成都红唐购物中心店)</h3>
+                            <i class="fa fa-minus-square"></i>
+                        </div> <!--第一行-->
+                        <div class="business_info_star">
+                            <div class="business_info_star_left">
+                                <!--                                <i class="fa fa-star"></i>满星-->
+                                <!--                                <i class="fa fa-star-half-full"></i>半星-->
+                                <!--                                <i class="fa fa-star-o"></i>空星-->
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <p>4.9 月售999单</p>
+                            </div>
+                            <div class="business_info_star_right">蜂鸟快送</div>
+                        </div><!--星级评价-->
+                        <div class="business_info_delivery">
+                            <p>&#165;35起送 | &#165;12配送</p>
+                            <p>4.14km |23 分钟</p>
+                        </div><!--配送-->
+                        <div class="business_info_intro">
+                            <div>吃了都说好!!!!</div>
+                        </div><!--简介-->
+                        <div class="business_info_promotion">
+                            <div class="business_info_promotion_left">
+                                <div class="business_info_promotion_left_icon">新</div>
+                                <p>饿了么新用户首单立减9元</p>
+                            </div>
+                            <div class="business_info_promotion_right">
+                                <p>两个活动</p>
+                                <i class="fa fa-caret-down"></i>
+                            </div>
+
+                        </div><!---->
+                        <div class="business_info_promotion">
+                            <div class="business_info_promotion_left">
+                                <!--                            这里用到了一个行的样式-->
+                                <div class="business_info_promotion_left_icon" style="background-color: #F1884F">特</div>
+                                <p>特价商品5元起</p>
+                            </div>
+
+
+                        </div><!---->
+
+
+
+
+                    </div>
+                </li>
+                <li>
+                    <img src="img/img1/badSmell.jpeg">
+                    <div class="business_info">
+                        <div class="business_info_header">
+                            <h3>柳州螺蛳粉(成都银泰城店)</h3>
+                            <i class="fa fa-minus-square"></i>
+                        </div> <!--第一行-->
+                        <div class="business_info_star">
+                            <div class="business_info_star_left">
+                                <!--                                <i class="fa fa-star"></i>满星-->
+                                <!--                                <i class="fa fa-star-half-full"></i>半星-->
+                                <!--                                <i class="fa fa-star-o"></i>空星-->
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                                <p>4.1 月售9999单</p>
+                            </div>
+                            <div class="business_info_star_right">蜂鸟快送</div>
+                        </div><!--星级评价-->
+                        <div class="business_info_delivery">
+                            <p>&#165;15起送 | &#165;10配送</p>
+                            <p>7.15km |30 分钟</p>
+                        </div><!--配送-->
+                        <div class="business_info_intro">
+                            <div>正宗的,才够味</div>
+                        </div><!--简介-->
+<!--                        <div class="business_info_promotion">-->
+<!--                            <div class="business_info_promotion_left">-->
+<!--                                <div class="business_info_promotion_left_icon">新</div>-->
+<!--                                <p>饿了么新用户首单立减9元</p>-->
+<!--                            </div>-->
+<!--                            <div class="business_info_promotion_right">-->
+<!--                                <p>两个活动</p>-->
+<!--                                <i class="fa fa-caret-down"></i>-->
+<!--                            </div>-->
+
+<!--                        </div>&lt;!&ndash;&ndash;&gt;-->
+                        <div class="business_info_promotion">
+                            <div class="business_info_promotion_left">
+                                <!--                            这里用到了一个行的样式-->
+                                <div class="business_info_promotion_left_icon" style="background-color: #F1884F">特</div>
+                                <p>特价商品5元起</p>
+                            </div>
+
+
+                        </div><!---->
+
+
+
+
+                    </div>
+                </li>
+                <li>
+                    <img src="img/img1/fire.jpeg">
+                    <div class="business_info">
+                        <div class="business_info_header">
+                            <h3>凉山好汉自助西昌烧烤(高新店)</h3>
+                            <i class="fa fa-minus-square"></i>
+                        </div> <!--第一行-->
+                        <div class="business_info_star">
+                            <div class="business_info_star_left">
+                                <!--                                <i class="fa fa-star"></i>满星-->
+                                <!--                                <i class="fa fa-star-half-full"></i>半星-->
+                                <!--                                <i class="fa fa-star-o"></i>空星-->
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <p>4.9 月售2356单</p>
+                            </div>
+                            <div class="business_info_star_right">蜂鸟快送</div>
+                        </div><!--星级评价-->
+                        <div class="business_info_delivery">
+                            <p>&#165;35起送 | &#165;15配送</p>
+                            <p>5.25km |45 分钟</p>
+                        </div><!--配送-->
+                        <div class="business_info_intro">
+                            <div>自助烧烤</div>
+                        </div><!--简介-->
+                        <div class="business_info_promotion">
+                            <div class="business_info_promotion_left">
+                                <div class="business_info_promotion_left_icon">新</div>
+                                <p>饿了么新用户首单立减9元</p>
+                            </div>
+                            <div class="business_info_promotion_right">
+                                <p>两个活动</p>
+                                <i class="fa fa-caret-down"></i>
+                            </div>
+
+                        </div><!---->
+                        <div class="business_info_promotion">
+                            <div class="business_info_promotion_left">
+                                <!--                            这里用到了一个行的样式-->
+                                <div class="business_info_promotion_left_icon" style="background-color: #F1884F">特</div>
+                                <p>特价商品5元起</p>
+                            </div>
+
+
+                        </div><!---->
+
+
+
+
+                    </div>
+                </li>
+
+            </ul>
+
+            <!--底部菜单-->
+            <ul class="bottom_menu">
+                <li onclick="location.href='index.html'">
+                    <img src="img/img1/headPage.png">
+                    <p>首页</p>
+                </li>
+                <li>
+                    <img src="img/img1/search.png">
+                    <p>发现</p>
+                </li>
+                <li onclick="location.href='orderList.html'">
+                    <img src="img/img1/order.png">
+                    <p>订单</p>
+                </li>
+                <li>
+                    <img src="img/img1/mine.png">
+                    <p>我的</p>
+                </li>
+
+            </ul>
+
+
+
+        </div>
+    </body>
+</html>
